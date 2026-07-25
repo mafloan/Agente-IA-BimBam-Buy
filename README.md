@@ -34,7 +34,7 @@ Asimismo, se identifican como señales de no cobertura:
 *   Modificaciones físicas.
 
 Chat ready! Ask questions below:
-Q:
+Q: Postular al programa de afiliados
 Ask about BimBam Buy policies...
 RESPONSE:
 ------------------------------------------------------------
