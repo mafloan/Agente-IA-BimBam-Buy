@@ -32,6 +32,26 @@ Asimismo, se identifican como señales de no cobertura:
 *   Uso fuera de instrucciones.
 *   Accesorios incompatibles.
 *   Modificaciones físicas.
+
+Chat ready! Ask questions below:
+Q:
+Ask about BimBam Buy policies...
+RESPONSE:
+------------------------------------------------------------
+De acuerdo con las políticas de BimBam Buy, pueden postular al programa de afiliados:
+
+* Creadores de contenido
+* Sitios de cupones
+* Medios digitales
+* Comunidades de compras
+* Educadores o reseñadores de productos
+* Socios de contenido con audiencia en LATAM
+
+El tiempo para la aprobación de los postulantes es variable.
+------------------------------------------------------------
+
+Sources:
+  • Programa de afiliados.pdf
 *   Exposición a líquidos o temperaturas extremas.
 ------------------------------------------------------------
 
