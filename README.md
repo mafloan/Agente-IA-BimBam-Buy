@@ -6,10 +6,7 @@ Creación de agente de inteligencia artificial que asiste al público objetivo, 
 *Manual de garantía 
 *Preguntas frequentes-FAQs
 
-Arquitectura utilizada:
-Agente_IA_BimBamBuy/
-
-│
+#Arquitectura utilizada para el Agente de IA de BimBam Buy:
 ├── 01_instalacion
 ├── 02_imports
 ├── 03_configuracion
@@ -24,6 +21,7 @@ Agente_IA_BimBamBuy/
 ├── 12_chat
 └── 13_pruebas
 
+#Ejemplos de preguntas al Agente de IA de BimBam Buy:
 Chat ready! Ask questions below:
 Q: Exclusiones de la garantia
 Ask about BimBam Buy policies...
