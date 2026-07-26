@@ -4,22 +4,113 @@ Creación de agente de inteligencia artificial que asiste al público objetivo, 
 *Política de reembolsos
 *Programa de afiliados
 *Manual de garantía 
-*Preguntas frequentes-FAQs
+*Preguntas frequentes- FAQs
 
-#Arquitectura utilizada para el Agente de IA de BimBam Buy:
-├── 01_instalacion
-├── 02_imports
-├── 03_configuracion
-├── 04_documentos
-├── 05_limpieza
-├── 06_chunking
-├── 07_embeddings
-├── 08_vectorstore
-├── 09_retriever
-├── 10_prompt
-├── 11_agente
-├── 12_chat
-└── 13_pruebas
+## Descripción general
+El proyecto implementa una arquitectura **RAG (Retrieval-Augmented Generation)** que permite que el modelo genere respuestas utilizando información proveniente de documentos internos de modo que sus respuestas sean más precisas, actualizadas y alineadas con la información oficial de la empresa.
+
+# Arquitectura de la solución
+El flujo de funcionamiento del agente es el siguiente:
+
+```
+                Documentos PDF
+                      │
+                      ▼
+          Carga y procesamiento
+                      │
+                      ▼
+        División en fragmentos (Chunks)
+                      │
+                      ▼
+ Generación de Embeddings (Google Gemini)
+                      │
+                      ▼
+       Base Vectorial (ChromaDB)
+                      │
+                      ▼
+          Retriever (Búsqueda semántica)
+                      │
+                      ▼
+               Prompt Template
+                      │
+                      ▼
+        Modelo Gemini (Google AI)
+                      │
+                      ▼
+      Respuesta generada al usuario
+```
+
+### Componentes principales
+
+- **Carga de documentos**
+  - Lectura de archivos PDF mediante LangChain.
+
+- **Preprocesamiento**
+  - División de los documentos en fragmentos para mejorar la recuperación de información.
+
+- **Embeddings**
+  - Conversión de los textos en representaciones vectoriales utilizando Google Generative AI Embeddings.
+
+- **Base vectorial**
+  - Almacenamiento de embeddings mediante ChromaDB.
+
+- **Retriever**
+  - Recuperación de los fragmentos más relevantes para responder cada consulta.
+
+- **LLM**
+  - Google Gemini genera la respuesta utilizando el contexto recuperado.
+
+---
+
+# Tecnologías y herramientas utilizadas
+
+- Python 3
+- Jupyter Notebook
+- LangChain
+- Google Gemini
+- Google Generative AI Embeddings
+- ChromaDB
+- PyPDF
+- dotenv
+- Google Colab
+- GitHub
+
+---
+
+# Instalación y ejecución
+
+## 1. Clonar el repositorio
+
+```
+git clone https://github.com/mafloan/Agente-IA-BimBam-Buy.git
+```
+
+```Agente-IA-BimBamBuy2026
+```
+## 2. Instalar las dependencias
+
+```
+pip install langchain
+pip install langchain-google-genai
+pip install chromadb
+pip install pypdf
+pip install python-dotenv
+```
+
+## 3. Configurar la API Key
+
+Crear un archivo `.env`
+
+```
+GOOGLE_API_KEY=TU_API_KEY
+```
+
+## 4. Ejecutar el notebook
+```
+Abrir: Agente_IA_BimBamBuy2026.ipynb
+Aclaración: cree varios archivos pero el que funciona es Agente IA BimBamBuy2026
+```
+---
 
 #Ejemplos de preguntas al Agente de IA de BimBam Buy:
 Chat ready! Ask questions below:
@@ -71,6 +162,5 @@ Sources:
 *   Exposición a líquidos o temperaturas extremas.
 ------------------------------------------------------------
 
-Sources:
   • Manual de Garantia.pdf
   • Politica de reembolsos.pdf
